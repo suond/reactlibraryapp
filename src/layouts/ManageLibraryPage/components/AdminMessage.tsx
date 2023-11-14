@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MessageModel from "../../../models/MessageModel";
 
-export const AdminMessage: React.FC<{ message: MessageModel, submitResponse: Function }> = (props, key) => {
+export const AdminMessage: React.FC<{ message: MessageModel, submitResponse: Function }> = (props) => {
 
     const [displayWarning, setDisplayWarning] = useState(false);
     const [response, setResponse] = useState('');

@@ -12,8 +12,9 @@ export const Carousel = () => {
 
     useEffect(() => {
         const fetchBooks = async () => {
-            console.log(import.meta.env.VITE_TEST);
-            console.log(import.meta.env.MODE);
+            // console.log(import.meta.env.VITE_REACT_API); //
+            // console.log(import.meta.env.VITE_TEST); //
+            // console.log(import.meta.env.VITE_TESTNET);  //DELETE ONECE READE
             const baseUrl = `${import.meta.env.VITE_REACT_APP_API}/books`
 
             const url = `${baseUrl}?page=0&size=9`

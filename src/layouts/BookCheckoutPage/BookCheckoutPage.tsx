@@ -242,7 +242,7 @@ export const BookCheckoutPage = () => {
         }
 
         const reviewRequestModel = new ReviewRequestModel(starInput, bookId, reviewDescription);
-        const url = '${import.meta.env.VITE_REACT_APP_API}/reviews/secure';
+        const url = `${import.meta.env.VITE_REACT_APP_API}/reviews/secure`;
         const requestOptions = {
             method: 'POST',
             headers:{

@@ -14,7 +14,7 @@ export const Navbar = () => {
         oktaAuth.signOut();
     };
 
-    console.log(authState);
+    // console.log(authState); //COMMENT OUT ONCE READY
 
     return (
         <nav className='navbar navbar-expand-lg navbar-dark main-color py-3'>

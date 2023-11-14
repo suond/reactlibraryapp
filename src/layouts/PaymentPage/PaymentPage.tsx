@@ -62,7 +62,7 @@ export const PaymentPage = () => {
 
         setSubmitDisabled(true);
         let f = Math.round(fees * 100);
-        console.log(f);
+        // console.log(f);
         let paymentInfo = new PaymentInfoRequest(f, 'USD', authState?.accessToken?.claims.sub);
 
         const url = `https://localhost:8443/api/payment/secure/payment-intent`;
