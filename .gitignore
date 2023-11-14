@@ -25,5 +25,6 @@ dist-ssr
 *.local
 localhost.*
 ssl-localhost
-docker/*
+docker*
 public*
+.dockerignore
