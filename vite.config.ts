@@ -13,6 +13,13 @@ export default defineConfig({
     watch:{
       usePolling: true
     },
+    // proxy:{
+    //   '/api':{
+    //     target: 'https://localhost:8443',
+    //     changeOrigin: true,
+    //     secure: false
+    //   }
+    // },
     port: 3000,
     https: {
       key: './ssl-localhost/localhost.key',
