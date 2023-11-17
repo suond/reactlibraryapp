@@ -26,7 +26,7 @@ export const Heros = () => {
                                         Explore top books
                                     </Link>
                                     :
-                                    <Link className='btn main-color btn-lg text-white' to='/login'>Sign up</Link>
+                                    <Link className='btn main-color btn-lg text-white' to='/login'>Sign in</Link>
                             }
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export const Heros = () => {
                                         Explore top books
                                     </Link>
                                     :
-                                    <Link className='btn main-color btn-lg text-white' to='/login'>Sign up</Link>
+                                    <Link className='btn main-color btn-lg text-white' to='/login'>Sign in</Link>
                             }
                         </div>
                     </div>

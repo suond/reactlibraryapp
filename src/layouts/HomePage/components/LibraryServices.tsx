@@ -22,7 +22,7 @@ export const LibraryServices = () => {
                                 </Link>
                                 :
                                 <Link className='btn main-color btn-lg text-white' to='/login'>
-                                    Sign up
+                                    Sign in
                                 </Link>
                         }
                     </div>
