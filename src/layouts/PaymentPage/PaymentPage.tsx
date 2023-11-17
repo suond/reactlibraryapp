@@ -17,7 +17,7 @@ export const PaymentPage = () => {
         const fetchFees = async () => {
 
             if (authState && authState.isAuthenticated) {
-                const url = `${import.meta.env.VITE_REACT_APP_API}/payments/search/findByUserEmail?userEmail=${authState.accessToken?.claims.sub}`;
+                const url = `/api/payments/search/findByUserEmail?userEmail=${authState.accessToken?.claims.sub}`;
                 const requestOptions = {
                     method: 'GET',
                     headers: {

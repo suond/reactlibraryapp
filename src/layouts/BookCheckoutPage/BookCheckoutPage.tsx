@@ -43,7 +43,7 @@ export const BookCheckoutPage = () => {
 
     useEffect(() => {
         const fetchBook = async () => {
-            const baseUrl: string = `${import.meta.env.VITE_REACT_APP_API}/books/${bookId}`;
+            const baseUrl: string = `/api/books/${bookId}`;
 
             const response = await fetch(baseUrl);
 
@@ -76,7 +76,7 @@ export const BookCheckoutPage = () => {
     useEffect(() =>{
         const fetchUserReviewBook = async () => {
             if (authState && authState.isAuthenticated){
-                const url = `${import.meta.env.VITE_REACT_APP_API}/reviews/secure/user/book?bookId=${bookId}`
+                const url = `/api/reviews/secure/user/book?bookId=${bookId}`
                 const requestOptions = {
                     method: 'GET',
                     headers: {
@@ -105,7 +105,7 @@ export const BookCheckoutPage = () => {
 
     useEffect(() => {
         const fetchBookReviews = async () => {
-            const reviewUrl: string = `${import.meta.env.VITE_REACT_APP_API}/reviews/search/findByBookId?bookId=${bookId}`;
+            const reviewUrl: string = `/api/reviews/search/findByBookId?bookId=${bookId}`;
             const responseReviews = await fetch(reviewUrl);
 
             if (!responseReviews.ok) {
@@ -149,7 +149,7 @@ export const BookCheckoutPage = () => {
     useEffect(() => {
         const fetchUserCurrentLoansCount = async () => {
             if (authState && authState.isAuthenticated){
-                const url = `${import.meta.env.VITE_REACT_APP_API}/books/secure/currentloans/count`;
+                const url = `/api/books/secure/currentloans/count`;
                 const requestOptions = {
                     method: 'GET',
                     headers: {
@@ -176,7 +176,7 @@ export const BookCheckoutPage = () => {
     useEffect(() => {
         const fetchUserCheckedOutBook = async () => {
             if (authState && authState.isAuthenticated){
-                const url = `${import.meta.env.VITE_REACT_APP_API}/books/secure/ischeckedout/byuser?bookId=${bookId}`;
+                const url = `/api/books/secure/ischeckedout/byuser?bookId=${bookId}`;
                 const requestOptions = {
                     method: 'GET',
                     headers: {
@@ -217,7 +217,7 @@ export const BookCheckoutPage = () => {
     // console.log(`isCheckedOut: ${isCheckedOut}, currentLoansCount: ${currentLoansCount}, isAuthenticated: ${authState?.isAuthenticated}`);
 
     async function checkoutBook() {
-        const url = `${import.meta.env.VITE_REACT_APP_API}/books/secure/checkout?bookId=${book?.id}`;
+        const url = `/api/books/secure/checkout?bookId=${book?.id}`;
         const requestOptions = {
             method: 'PUT',
             headers: {
@@ -242,7 +242,7 @@ export const BookCheckoutPage = () => {
         }
 
         const reviewRequestModel = new ReviewRequestModel(starInput, bookId, reviewDescription);
-        const url = `${import.meta.env.VITE_REACT_APP_API}/reviews/secure`;
+        const url = `/api/reviews/secure`;
         const requestOptions = {
             method: 'POST',
             headers:{

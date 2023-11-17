@@ -11,7 +11,7 @@ export const PostNewMessage = () => {
     const [ displaySuccess, setDisplaySuccess ] = useState(false);
 
     async function submitNewQuestion() {
-        const url = `${import.meta.env.VITE_REACT_APP_API}/messages/secure/add/message`;
+        const url = `/api/messages/secure/add/message`;
         if (authState?.isAuthenticated && title !== '' && question !== '') {
             const messageRequestModel: MessageModel = new MessageModel(title, question);
             const requestOptions = {

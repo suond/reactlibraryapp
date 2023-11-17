@@ -19,7 +19,7 @@ export const SearchBooksPage = () => {
 
   useEffect(() => {
     const fetchBooks = async () => {
-      const baseUrl = `${import.meta.env.VITE_REACT_APP_API}/books`
+      const baseUrl = `/api/books`
       // console.log('running useEffect')
       let url = '';
 
