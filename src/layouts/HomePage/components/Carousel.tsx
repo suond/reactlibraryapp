@@ -15,7 +15,7 @@ export const Carousel = () => {
             // console.log(import.meta.env.VITE_REACT_API); //
             // console.log(import.meta.env.VITE_TEST); //
             // console.log(import.meta.env.VITE_TESTNET);  //DELETE ONECE READE
-            console.log(`${import.meta.env.VITE_OKTA_REDIRECT_URL}`)
+            // console.log(`${import.meta.env.VITE_OKTA_REDIRECT_URL}`)
             const baseUrl = `/api/books`
 
             const url = `${baseUrl}?page=0&size=9`
