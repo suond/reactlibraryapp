@@ -14,6 +14,7 @@ import { ShelfPage } from './layouts/ShelfPage/ShelfPage';
 import { MessagesPage } from './layouts/MessagesPage/MessagesPage';
 import { ManageLibraryPage } from './layouts/ManageLibraryPage/ManageLibraryPage';
 import { PaymentPage } from './layouts/PaymentPage/PaymentPage';
+import NotFound from './NotFound';
 
 
 function App() {
@@ -66,7 +67,9 @@ function App() {
             <SecureRoute path="/fees">
               <PaymentPage />
             </SecureRoute>
-          
+            <Route path="*">
+              <NotFound />
+            </Route>
           </Switch>
         </div>
         <Footer />
