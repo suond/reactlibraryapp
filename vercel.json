@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/api/:path*",
-            "destination": "https://ec2-34-209-180-12.us-west-2.compute.amazonaws.com:8443/api/:path*"
+            "destination": "https://ec2-54-202-122-216.us-west-2.compute.amazonaws.com:8443/api/:path*"
         }
     ]
 }
